@@ -9,7 +9,7 @@ it("validate user can search for a product", () => {
     page.searchProduct("shoes")
     page.clickSearchButton()
 
-    // test
+
 
     
 
