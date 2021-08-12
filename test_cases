@@ -1,0 +1,101 @@
+TEST CASE > Validate that user can login to the site 
+
+STEPS:
+1. Open site 
+2. click `Sign in` button in top header bar 
+3. Enter Email address
+4. Hit `Continue` Buttom
+5. Enter Password
+6. Hit Sign in button 
+
+Expected:
+1. Make sure user can Sign in using existing credentials ( previously registered on the site ) 
+2. User's name appears on the top left corner instead of the `sign in` option 
+3. User stays on Home page 
+
+
+TEST CASE: Validate user can't login using invalid input credentials 
+
+PRECONDITIONS:
+SIGN IN PAGE IS OPENED
+
+STEPS:
+1. Do not enter email address and click CONTINUE CTA 
+2. Enter invalid email address in format' test@gmail ' 
+3. enter email address that doesn't exist
+4. enter valid email address and invalid password > click Sign in 
+
+Expected:
+1. 2. 3. 4 >  email field is underlined by red and text above the field says: `Oops, that's not a match. with a Red icon before it
+
+
+
+
+TEST CASE >  Validate user can search for a product 
+
+PREFCONDITIONS:
+Home page is opened 
+Guest user
+
+STEPS:
+1. Enter some text to search field ( example: `shoes` ) 
+2. click SEARCH button 
+
+Expected result:
+1. user can enter text to the field 
+2. Clicking Search button opens the PLP ( product listing page ) with search results 
+
+
+TEST CASE: Validate user can open PDP ( product details page ) from PLP 
+
+PREFCONDITIONS: 
+PLP is opened 
+
+STEPS:
+1. Select any product on PLP 
+
+Expected result: 
+1. User is able to select product on PLP 
+2. User is redirected to PDP of the selected product 
+
+
+TEST CASE: Validate user can product to Cart 
+
+PREFCONDITIONS:
+
+PDP is opened 
+
+STEPS:
+1. Select color 
+2. Select size 
+3. hit `add to cart` button 
+
+EXPECTED:
+1. user can select color from drop-down
+2. user can select size from ``drop-down
+3. user can add product to cart 
+4. `1 item added to cart` modal appears once the product is added 
+
+
+TEST CASE: Validate user can remove product in cart 
+
+PRECONDITIONS: 
+Cart page is opened 
+User has added product in cart
+
+STEPS:
+1. click `remove from cart` button 
+2. review screen after removing product from cart 
+3. click `Continue shopping`
+
+EXPECTED:
+1. message that product has been removed is shown
+2. No items messages are shown  `You don't have any items in your cart.` and under it `Have an account? Sign in to see your items. > two buttons are shown `Start shopping` ; `Sign in` 
+3. user is take to Home page 
+
+
+
+
+
+
+
