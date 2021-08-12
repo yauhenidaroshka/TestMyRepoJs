@@ -14,7 +14,7 @@ export class SignInPage {
 
     }
 
-    inputEmail(email, string){
+    inputEmail(email){
         cy.xpath(this.signInInputField).type(email, {force: true})
     }
 
@@ -23,7 +23,7 @@ export class SignInPage {
 
     }
 
-    inputPassword(password, string){
+    inputPassword(password){
         cy.get(this.passwordField).click()
         cy.get(this.passwordField).type(password, {force: true})
     }

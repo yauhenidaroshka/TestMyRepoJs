@@ -14,6 +14,6 @@ it ("Ligon as existing user", () => {
     signInPage.getPageHeader()
     signInPage.inputEmail("daroshokay@gmail.com")
     signInPage.clickContinueButton()
-    signInPage.inputPassword('21011992_qQQ')
+    signInPage.inputPassword('test')
     signInPage.clickSingInButton()
 })
