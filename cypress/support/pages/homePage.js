@@ -3,7 +3,7 @@
 
 export class HomePage {
 
-    signInButton = '#gh-ug'
+    signInButton = '//span[@id="gh-ug"]//a[contains(text(),"Sign in")]'
     searchButon = '//input[@class = "btn btn-prim gh-spr"]'
     siteLogo = '#gh-la'
 

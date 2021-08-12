@@ -1,13 +1,18 @@
 /// <reference types="cypress"/>
 
-import {HomePage, homePage} from "../support/pages/homePage.js"
+
+import {HomePage} from "../support/pages/homePage.js"
+import { ResultPage } from "../support/pages/ResultPage.js";
+
 
 const page = new HomePage();
 
-it("validate user can search for a product", () => {
+it("Validate user can search for a product", () => {
     page.openPage("https://www.ebay.com/")
     page.searchProduct("shoes")
     page.clickSearchButton()
+    const resultsPage = new ResultPage()
+    resultsPage.getResultsNumber().should('have.class', 'srp-controls__count-heading')
 
 
 
