@@ -3,18 +3,18 @@
 
 export class HomePage {
 
-    signInButton = '//*[@id="gh-ug"]//a[text()="Sign in"]'
+    signInButton = '#gh-ug'
     searchButon = '//input[@class = "btn btn-prim gh-spr"]'
-    siteLogo = '//h1//a[@id="gh-la"]'
+    siteLogo = '#gh-la'
 
 
 
 
-    openPage(url, string){
+    openPage(url){
        cy.visit(url)
     }
 
-    searchProduct(productName, string){
+    searchProduct(productName){
         cy.get("#gh-ac").type(productName)
     }
 
