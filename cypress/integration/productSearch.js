@@ -12,7 +12,7 @@ it("Validate user can search for a product", () => {
     page.searchProduct("shoes")
     page.clickSearchButton()
     const resultsPage = new ResultPage()
-    resultsPage.getResultsNumber().should('have.class', 'srp-controls__count-heading')
+    resultsPage.getResultsNumber().should('have.class', 'srp-controls__count-heading').and('have.text', 'shoes')
 
 
 

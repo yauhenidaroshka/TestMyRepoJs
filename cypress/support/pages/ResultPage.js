@@ -1,7 +1,7 @@
 export class ResultPage{
-    resultsNumber = "//h1[@class = 'srp-controls__count-heading']//span[contains(text(), 'shoes')]"
+    resultsNumber = '.srp-controls__count-heading'
 
-    getResultsNumber(resultsNumber){
+    getResultsNumber(){
         return cy.get(this.resultsNumber)
 
     }
