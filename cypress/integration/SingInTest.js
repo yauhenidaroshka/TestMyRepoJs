@@ -13,7 +13,7 @@ it ("Validate that user can login to the site ", () => {
     signInPage.getPageHeader().should('have.text', 'Hello')
     signInPage.inputEmail("daroshokay@gmail.com")
     signInPage.clickContinueButton()
-    signInPage.inputPassword('21011992aaa')
+    signInPage.inputPassword('xxxx')
     signInPage.clickSingInButton()
     page.openPage("https://www.ebay.com/")
 
