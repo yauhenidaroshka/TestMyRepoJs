@@ -8,7 +8,7 @@ const signInPage = new SignInPage()
 
 
 it("Open the Ebay site", () => {
-    homePage.openPage('https://www.ebay.com/')
+    homePage.openPage()
 
 })
 

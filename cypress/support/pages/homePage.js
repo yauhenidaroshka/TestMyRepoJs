@@ -8,9 +8,19 @@ export class HomePage {
     savedButton = '.saved > a'
     motorsButton = "//li[@class = 'hl-cat-nav__js-tab' and  @data-currenttabindex='0']"
 
+    url;
 
-    openPage(url){
-       cy.visit(url)
+    constructor (url){ 
+        this.url = Cypress.config('baseUrl', 'https://www.ebay.com/');
+    }
+
+    openPage(){
+        cy.visit(this.url);
+    }
+
+
+    openPage(){
+        cy.visit(this.url);
     }
 
     searchProduct(productName){
