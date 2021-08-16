@@ -9,9 +9,15 @@ const signInPage = new SignInPage()
 
 it("Open the Ebay site", () => {
     homePage.openPage('https://www.ebay.com/')
+
+})
+
+it('Opens Saved page ', () => {
     homePage.openSavedPage()
     signInPage.getPageHeader().should('have.text', 'Hello')
     homePage.returnToHomePage()
+})
 
-
+it('Opens Motors page ', () => {
+    homePage.openMotorsPage()
 })

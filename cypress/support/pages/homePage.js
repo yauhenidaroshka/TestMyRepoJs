@@ -6,6 +6,7 @@ export class HomePage {
     searchButon = '//input[@class = "btn btn-prim gh-spr"]'
     siteLogo = '#gh-la'
     savedButton = '.saved > a'
+    motorsButton = "//li[@class = 'hl-cat-nav__js-tab' and  @data-currenttabindex='0']"
 
 
     openPage(url){
@@ -34,6 +35,9 @@ export class HomePage {
 
     openMotorsPage(){
         cy.xpath(this.motorsButton).click()
+    }
+    isMotorsPageOpened(){
+        cy.get('.b-pageheader__text')
     }
 
 }

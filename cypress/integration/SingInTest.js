@@ -7,7 +7,7 @@ import { SignInPage } from "../support/pages/signInPage";
 const page = new HomePage()
 const signInPage = new SignInPage()
 
-it ("Validate that user can login to the site ", () => {
+it ("Validates that user can login to the site ", () => {
     page.openPage("https://www.ebay.com/")
     page.openLoginModal()
     signInPage.getPageHeader().should('have.text', 'Hello')
