@@ -7,9 +7,8 @@ const homePage = new HomePage()
 const signInPage = new SignInPage()
 
 
-it("Open the Ebay site", () => {
+beforeEach(() => {
     homePage.openPage()
-
 })
 
 it('Opens Saved page ', () => {
