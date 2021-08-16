@@ -94,6 +94,19 @@ EXPECTED:
 3. user is take to Home page 
 
 
+TEST CASE: Validate user can open each category 
+
+PRECONDITIONS:
+Home page is opened 
+
+STEPS:
+1. Click each category 
+
+Expected result: 
+- all categories are listed on the page 
+- Hovering over categories adds blue undrline
+- Clicking each category opens PLP page with products for selected category 
+
 
 
 
