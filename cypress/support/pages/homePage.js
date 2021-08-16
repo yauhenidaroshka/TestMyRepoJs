@@ -7,17 +7,13 @@ export class HomePage {
     siteLogo = '#gh-la'
     savedButton = '.saved > a'
     motorsButton = "//li[@class = 'hl-cat-nav__js-tab' and  @data-currenttabindex='0']"
+    
 
     url;
 
     constructor (url){ 
         this.url = Cypress.config('baseUrl', 'https://www.ebay.com/');
     }
-
-    openPage(){
-        cy.visit(this.url);
-    }
-
 
     openPage(){
         cy.visit(this.url);
@@ -46,8 +42,6 @@ export class HomePage {
     openMotorsPage(){
         cy.xpath(this.motorsButton).click()
     }
-    isMotorsPageOpened(){
-        cy.get('.b-pageheader__text')
-    }
+   
 
 }
