@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 import {HomePage} from "../support/pages/homePage"
-import { MotorsPage } from "../support/pages/motorsPage"
+import {MotorsPage} from "../support/pages/motorsPage"
 import {SignInPage} from "../support/pages/signInPage"
 
 const homePage = new HomePage()

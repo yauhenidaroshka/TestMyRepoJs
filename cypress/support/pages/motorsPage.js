@@ -7,7 +7,6 @@ export class MotorsPage{
 
     getPageBannerName(){
             return cy.get(this.motorsBanner)
-    
            }
 
 
