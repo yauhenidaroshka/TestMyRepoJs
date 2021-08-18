@@ -12,7 +12,7 @@ export class HomePage {
     url;
 
     constructor (url){ 
-        this.url = Cypress.config('baseUrl', 'https://www.ebay.com/');
+        this.url = 'https://www.ebay.com/';
     }
 
     openPage(){

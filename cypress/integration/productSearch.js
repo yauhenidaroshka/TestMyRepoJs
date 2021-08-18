@@ -5,16 +5,12 @@ import {HomePage} from "../support/pages/homePage.js"
 import { ResultPage } from "../support/pages/ResultPage.js";
 
 
-const page = new HomePage();
+const page = new HomePage()
+const resultsPage = new ResultPage()
 
 it("Validate user can search for a product", () => {
     page.openPage("https://www.ebay.com/")
     page.searchProduct("shoes{enter}")
-    const resultsPage = new ResultPage()
-    resultsPage.getResultsNumber().should('have.class', 'srp-controls__count-heading').and('have.text', 'shoes')
-
-
-
-    
+    resultsPage.getResultsNumber().should('contain.text', 'shoes')
 
 })
