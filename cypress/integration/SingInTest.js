@@ -8,14 +8,12 @@ const page = new HomePage()
 const signInPage = new SignInPage()
 
 it ("Validates that user can login to the site ", () => {
-    page.openPage("https://www.ebay.com/")
+    page.openPage()
     page.openLoginModal()
     signInPage.getPageHeader().should('have.text', 'Hello')
-    signInPage.inputEmail("daroshokay@gmail.com")
+    signInPage.inputEmail(Cypress.env("email"))
     signInPage.clickContinueButton()
-    signInPage.inputPassword('xxxx')
+    signInPage.inputPassword(Cypress.env("password"))
     signInPage.clickSingInButton()
-    page.openPage("https://www.ebay.com/")
-
     
 })

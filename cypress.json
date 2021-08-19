@@ -1,5 +1,12 @@
 {
-    "watchForFileChanges": true
-    
-    
+    "$schema": "https://getcomposer.org/schema.json",
+        "baseURL": "https://www.ebay.com/",
+        "login_url": "/login",
+        "products_url": "/products",
+        "env": {
+            "email": "test@test.com",
+            "password": "password",
+            "url": "https://www.ebay.com/"
+
+        }
 }
