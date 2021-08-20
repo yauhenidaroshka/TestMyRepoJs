@@ -8,6 +8,7 @@ export class HomePage {
     savedButton = '.saved > a'
     motorsButton = "//li[@class = 'hl-cat-nav__js-tab' and  @data-currenttabindex='0']"
     shopByCategoryButton = '#gh-shop-a'
+    cartIcon = '//div//a[@class ="gh-eb-li-a gh-rvi-menu" and @aria-label="Your shopping cart"]'
     
 
     openPage(){
@@ -40,7 +41,11 @@ export class HomePage {
     }
    
     openCategoriesList(){
-        cy.get('#gh-shop-a').click()
+        cy.get(this.shopByCategoryButton).click()
+    }
+
+    openCartPage(){
+        cy.xpath(this.cartIcon).click()
     }
 
 }
