@@ -9,6 +9,7 @@ export class HomePage {
     motorsButton = "//li[@class = 'hl-cat-nav__js-tab' and  @data-currenttabindex='0']"
     shopByCategoryButton = '#gh-shop-a'
     cartIcon = '//div//a[@class ="gh-eb-li-a gh-rvi-menu" and @aria-label="Your shopping cart"]'
+    categoris = "//h3//a//i[@class ='chevron-right']"
     
 
     openPage(){
@@ -47,5 +48,13 @@ export class HomePage {
     openCartPage(){
         cy.xpath(this.cartIcon).click()
     }
+
+    selectCategory (){
+        cy.xpath(this.categoris).parents('.gh-sbc-parent')
+        .find('.chevron-right')
+        .first()
+        .click()
+    }
+
 
 }
