@@ -11,7 +11,11 @@ it("should open PDP page", () => {
     homepAge.openPage()
     homepAge.openCategoriesList()
     homepAge.selectCategory()
+    homepAge.getCategoriesList()
     colPage.getPageTitle().should('have.text', 'Collectibles & Art')
+    colPage.openCategoryPage()
+    
+  // colPage.getFirstProductPLP()
 
 
     

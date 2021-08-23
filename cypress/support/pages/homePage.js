@@ -10,6 +10,7 @@ export class HomePage {
     shopByCategoryButton = '#gh-shop-a'
     cartIcon = '//div//a[@class ="gh-eb-li-a gh-rvi-menu" and @aria-label="Your shopping cart"]'
     categoris = "//h3//a//i[@class ='chevron-right']"
+    listOfCategories ="//h3[@class='gh-sbc-parent']//a"
     
 
     openPage(){
@@ -55,6 +56,20 @@ export class HomePage {
         .first()
         .click()
     }
+    getCategoriesList(){
+        cy.xpath(this.listOfCategories).then( items => {
+            expect(items[0]).to.contain.text('Collectibles & art')
+            expect(items[1]).to.contain.text('Electronics')
+            expect(items[2]).to.contain.text('Entertainment memorabilia')
+            expect(items[3]).to.contain.text('Fashion')
+            expect(items[4]).to.contain.text('Home & garden')
+            expect(items[5]).to.contain.text('Motors')
+            expect(items[6]).to.contain.text('Sporting goods')
+            expect(items[7]).to.contain.text('Toys & hobbies')
+            expect(items[8]).to.contain.text('Other categories')
+    })
+
+}
 
 
 }
