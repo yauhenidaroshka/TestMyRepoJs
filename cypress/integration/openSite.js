@@ -19,8 +19,8 @@ it('Opens Saved page ', () => {
     homePage.returnToHomePage()
 })
 
-it('Opens Motors page ', () => {
-    homePage.openMotorsPage()
-    motorsPage.getPageBannerName().should('have.text', 'eBay Motors')
+// it('Opens Motors page ', () => {
+//     homePage.openMotorsPage()
+//     motorsPage.getPageBannerName().should('have.text', 'eBay Motors')
 
-})
+// })

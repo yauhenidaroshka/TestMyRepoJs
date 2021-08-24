@@ -11,6 +11,7 @@ export class HomePage {
     cartIcon = '//div//a[@class ="gh-eb-li-a gh-rvi-menu" and @aria-label="Your shopping cart"]'
     categoris = "//h3//a//i[@class ='chevron-right']"
     listOfCategories ="//h3[@class='gh-sbc-parent']//a"
+    footerSection = '#glbfooter'
     
 
     openPage(){
@@ -69,6 +70,10 @@ export class HomePage {
             expect(items[8]).to.contain.text('Other categories')
     })
 
+}
+
+getFooter(){
+    return cy.get(this.footerSection).scrollIntoView().should("be.visible")
 }
 
 
