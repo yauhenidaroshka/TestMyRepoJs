@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^8.3.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-xpath": "^1.6.2"
   },
   "dependencies": {
     "@cypress/schema-tools": "^4.7.8",
-    "cypress": "^8.2.0",
     "typescript": "^4.3.5"
   }
 }

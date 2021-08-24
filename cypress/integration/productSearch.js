@@ -9,8 +9,9 @@ const page = new HomePage()
 const resultsPage = new ResultPage()
 
 it("Validate user can search for a product", () => {
-    page.openPage("https://www.ebay.com/")
+    page.openPage()
     page.searchProduct("shoes{enter}")
     resultsPage.getResultsNumber().should('contain.text', 'shoes')
+    resultsPage.selectFirstProductTile()
 
 })
