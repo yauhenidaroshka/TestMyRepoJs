@@ -12,6 +12,7 @@ export class HomePage {
     categoris = "//h3//a//i[@class ='chevron-right']"
     listOfCategories ="//h3[@class='gh-sbc-parent']//a"
     footerSection = '#glbfooter'
+    footerLinks = "//li[@class = 'gf-li']//a[@class = 'thrd gf-bar-a']"
     
 
     openPage(){
@@ -28,7 +29,7 @@ export class HomePage {
     }
 
     returnToHomePage(){
-        cy.get(this.siteLogo).click()
+        cy.get(this.siteLogo).click().should('have.url', 'https://www.ebay.com/')
     }
 
     openLoginModal(){
@@ -74,6 +75,28 @@ export class HomePage {
 
 getFooter(){
     return cy.get(this.footerSection).scrollIntoView().should("be.visible")
+}
+
+getFooterLinks(){
+    return cy.xpath(this.footerLinks).should('have.length', 10)
+   
+}
+
+getFooterLinkNames(){
+    cy.xpath(this.footerLinks).then(items => {
+        expect(items[0]).to.contain.text('About eBay')
+        expect(items[1]).to.contain.text('Announcements')
+        expect(items[2]).to.contain.text('Community')
+        expect(items[3]).to.contain.text('Security Center')
+        expect(items[4]).to.contain.text('Resolution Center')
+        expect(items[5]).to.contain.text('Seller Center')
+        expect(items[6]).to.contain.text('Policies')
+        expect(items[7]).to.contain.text('Affiliates')
+        expect(items[8]).to.contain.text('Help & Contact')
+        expect(items[9]).to.contain.text('Site Map')
+    }
+
+ )
 }
 
 

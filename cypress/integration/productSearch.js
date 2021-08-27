@@ -2,8 +2,8 @@
 
 
 import {HomePage} from "../support/pages/homePage.js"
-import { ResultPage } from "../support/pages/ResultPage.js";
-import { OpenedPage } from "../plugins/keepPageOpen.js";
+import {ResultPage} from "../support/pages/ResultPage.js";
+import {OpenedPage} from "../plugins/keepPageOpen.js";
 
 const page = new HomePage()
 const resultsPage = new ResultPage()
@@ -15,6 +15,6 @@ it("Validate user can search for a product", () => {
     page.searchProduct("shoes{enter}")
     resultsPage.getResultsNumber().should('contain.text', 'shoes')
     resultsPage.selectFirstProductTile()
-    //keepPage.keepPageOpen()
+    keepPage.keepPageOpen()
 
 })

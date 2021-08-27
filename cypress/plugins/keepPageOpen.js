@@ -1,5 +1,6 @@
 /// <reference types="cypress"/>
 
+
 export class OpenedPage{
 
 keepPageOpen(){
@@ -12,3 +13,4 @@ Cypress.on('window:before:load', (win) => {
   })
 }
 }
+
