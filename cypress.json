@@ -4,9 +4,8 @@
         "login_url": "/login",
         "products_url": "/products",
         "env": {
-            "email": "test@test.com",
-            "password": "password",
-            "url": "https://www.ebay.com/"
+            "url": "https://www.ebay.com/",
+            "pdpURL": "https://www.ebay.com/itm/313256869951?_trkparms=ispr%3D1&hash=item48ef90803f:g:8o0AAOSwCwJfheaF&amdata=enc%3AAQAGAAACgPYe5NmHp%252B2JMhMi7yxGiTJkPrKr5t53CooMSQt2orsSB0Xm7k0guzAysaIMfJcbBEVvYmCsIZ86PG%252FCQw0di2To61KnVN89HAFp4JfMameTbVp7tiAHrrNIqrxsJha%252BwM5cYir9UTxxBncSXEdm7VZbu67PdomgBv5evULFJbL%252BddDOaQj%252FOJ8yOwWk99OTybIaZf%252BmPdPUjxDdag0hcbwRsyAOM626zzHcUh9L397dQr%252BfWe7t1ADHn%252FFaDbi1y5ER312YtWCDiWEt7E%252FVxldmd%252FfFi6ZbLWApNWWW3RNripRe8RkfZSGapr6BclhUzaxfSjpxTjtKuUr6aSpitU54SCrNVpL67iUWa95KVJuv43OJaZeESGgLqu%252FmFMPF1AHlWg%252FhpCCn0IINwcwW0bY1RemzWLKkUeCec5HILe1cpaN7eEjs100Z45%252BzrA7NpMAD2DLkcYEUDPflx7XwW933gKwGX1t4In3qzZmxz2EH2uw38IhfcvpwlETwbLM2HwxWrKIDX1XIqTkAadQLjn%252BlD%252BQhQW0G1BfB%252FiPYucMWbO%252BwjkrCJaurfnRXGQbzk9Jk0G79G24jIiFFfLZla7Y5Qk4Yk4nGVNxAmxClzPK67dECVSGBgadX2qMmzJJB%252FEPHtL6aIztWhI0%252FTj7Vi8qzENcSGz%252F6Yt8SH5ZZsftXv4qCQfPERM1ar8t2GsPTpzwPYaV9jqGArgdEydzigXTPZ7BC6TXlWdFjgDtPHMMrmGnaCwwVmRUXgdjr4OMxYxLDhHuEhafI%252F64QFZ%252BsRx5N3A9qGuVIgzUaED963o5%252FvIhCLp5MdOhHKnOcTY2%252FokJdGm3GpE67eRBeRLk5yDQ%253D%7Campid%3APL_CLK%7Cclp%3A2334524"
 
         }
 }

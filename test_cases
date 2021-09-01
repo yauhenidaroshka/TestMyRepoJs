@@ -31,7 +31,7 @@ Expected:
 
 
 
-TEST CASE >  Validate user can search for a product 
+!!! TEST CASE >  Validate user can search for a product  ( implemented under productSearch.js ) 
 
 PREFCONDITIONS:
 Home page is opened 
@@ -59,7 +59,7 @@ Expected result:
 2. User is redirected to PDP of the selected product 
 
 
-TEST CASE: Validate user can product to Cart 
+TEST CASE: Validate user can add product to Cart 
 
 PREFCONDITIONS:
 
